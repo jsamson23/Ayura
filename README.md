@@ -3,7 +3,7 @@
 
 This is a modified version of Tetris in C++. The base game comes from the help of <a href= "https://javilop.com/gamedev/tetris-tutorial-in-c-platform-independent-focused-in-game-logic-for-beginners/">Javier López's tutorial on building a Tetris game in C++</a>. Several changes were made to make Ayura unique.
 
-<b><strong>Features</strong></b>
+<b><strong>Features</strong></b>:
 <ul>
   <li>Piece Shadow: A shadow of the current piece will be cast onto the board where it will be placed if it is hard dropped.
   <li>Das and Arr: Holding a direction (left or right) for long enough will start to automatically move the piece in that direction at a speed dependent on the Arr value.
@@ -19,7 +19,7 @@ And the option to change your DAS and ARR values from the application itself and
 
 <b>Setup to Play</b>: Simply clone the repository or download the source code on your machine, go to the debug folder, and run the .exe.
 
-<b>Controls</b> 
+<b>Controls</b>:
 <ul>
   <li>UP: Clockwise rotate.
   <li>LEFT: Move left one block. Hold to activate auto repeat
