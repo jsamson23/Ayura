@@ -1,6 +1,4 @@
-﻿  Pieces.cpp
-C:\Users\ssbms\OneDrive\Personal Projects\Ayura\Ayura\Pieces.cpp(338,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\ssbms\OneDrive\Personal Projects\Ayura\Ayura\Pieces.cpp(385,23): warning C4018: '<': signed/unsigned mismatch
+﻿  Main.cpp
 Board.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
      Creating library C:\Users\ssbms\OneDrive\Personal Projects\Ayura\Debug\Ayura.lib and object C:\Users\ssbms\OneDrive\Personal Projects\Ayura\Debug\Ayura.exp
 MSVCRTD.lib(initializers.obj) : warning LNK4098: defaultlib 'msvcrt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library

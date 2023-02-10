@@ -4,7 +4,9 @@
 #include <windows.h>
 #endif
 
-#define dasTime 120
+#define DAS_TIME 120
+#define ARR 20
+#define FAST_DROP_SPEED 10 // smaller the number the faster
 /*
 ==================
 Main
@@ -24,11 +26,7 @@ int main()
 	IO mIO;
 	int mScreenHeight = mIO.GetScreenHeight();
 	bool held = false;
-	bool das = false;
-	int arr = 20;
 	int checker = 0;
-	bool letGo = true;
-	int fastDropSpeed = 10;
 	// Pieces
 	Pieces mPieces;
 
@@ -58,13 +56,13 @@ int main()
 		if (mIO.IsKeyDown(SDLK_LEFT))
 		{
 			mDAS1L = SDL_GetTicks();
-			if (mDAS1L - mDAS2L > dasTime) {
+			if (mDAS1L - mDAS2L > DAS_TIME) {
 				if (mBoard.IsPossibleMovement(mGame.mPosX - 1, mGame.mPosY, mGame.mPiece, mGame.mRotation))
 					mGame.mPosX--;
 			}
 			if (mIO.IsKeyDown(SDLK_RIGHT))
 				mDAS2L = SDL_GetTicks();
-			SDL_Delay(arr);
+			SDL_Delay(ARR);
 
 		}
 		if (!mIO.IsKeyDown(SDLK_LEFT))
@@ -72,13 +70,13 @@ int main()
 		if (mIO.IsKeyDown(SDLK_RIGHT))
 		{
 			mDAS1R = SDL_GetTicks();
-			if (mDAS1R - mDAS2R > dasTime) {
+			if (mDAS1R - mDAS2R > DAS_TIME) {
 				if (mBoard.IsPossibleMovement(mGame.mPosX + 1, mGame.mPosY, mGame.mPiece, mGame.mRotation))
 					mGame.mPosX++;
 			}
 			if (mIO.IsKeyDown(SDLK_LEFT))
 				mDAS2R = SDL_GetTicks();
-			SDL_Delay(arr);
+			SDL_Delay(ARR);
 		}
 		if (!mIO.IsKeyDown(SDLK_RIGHT))
 			mDAS2R = SDL_GetTicks();
@@ -86,7 +84,7 @@ int main()
 		{
 			if (mBoard.IsPossibleMovement(mGame.mPosX, mGame.mPosY + 1, mGame.mPiece, mGame.mRotation))
 				mGame.mPosY++;
-			SDL_Delay(fastDropSpeed);
+			SDL_Delay(FAST_DROP_SPEED);
 		}
 
 		int mKey = mIO.Pollkey();
