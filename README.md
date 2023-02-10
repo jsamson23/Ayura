@@ -1,7 +1,7 @@
 # Ayura
-<h>Modern Tetris Clone built from C++</h>
+<h>Modern Tetris Clone built from C/C++</h>
 
-This is a modified version of Tetris in C++. The base game comes from the help of <a href= "https://javilop.com/gamedev/tetris-tutorial-in-c-platform-independent-focused-in-game-logic-for-beginners/">Javier López's tutorial on building a Tetris game in C++</a>. Several changes were made to make Ayura unique.
+This is a modified version of Tetris in C/C++. The base game comes from the help of <a href= "https://javilop.com/gamedev/tetris-tutorial-in-c-platform-independent-focused-in-game-logic-for-beginners/">Javier López's tutorial on building a Tetris game in C++</a>. Several changes were made to make Ayura unique.
 
 <b><strong>Features:</strong></b>
 <ul>
