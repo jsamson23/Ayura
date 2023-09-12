@@ -8,6 +8,7 @@ This is a modified version of Tetris in C/C++. The base game comes from the help
   <li>Piece Shadow: A shadow of the current piece will be cast onto the board where it will be placed if it is hard dropped.
   <li>Das and Arr: Holding a direction (left or right) for long enough will start to automatically move the piece in that direction at a speed dependent on the Arr value.
   <li>Hold: Implemented a hold system. If you hold, a piece is stored in the hold section and you are given a new piece. If the hold section already has a piece, your new piece is the piece in the hold section. If the hold section is empty, you are given the next piece in the queue.
+  <li>14 Piece Bag: Instead of random pieces being given in the queue. For every 14 pieces, there are two of each of the seven pieces in random order. After 14 pieces have been placed, the "piece bag" resets.
   <li>Proper piece coloring: Pieces have the proper color (Square is yellow, Line is cyan, etc.) and they retain their color after being placed.
   <li>Proper modern tetris movement: J-tucks, L-tucks, Z-spins, S-spins, T-spin minis and other possible tuck/rotation variations are now possible.
   <li>Grid on the board: The original version from López had no grid on the board. This is a simple grid feature. 
